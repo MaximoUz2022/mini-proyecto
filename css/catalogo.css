@@ -1,0 +1,224 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.Iniciocontenedor{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: 100px auto 120px;
+
+    grid-template-areas: "header header header"
+                        "logo main tabla"
+                        "footer footer footer";
+
+}
+.Iniciocontenedor{
+    background-color: white;
+    border-radius: 4px;
+}
+.Iniciocontenedor .headerH1{
+    grid-area: header;
+    text-align: center;
+    background: #148F77;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Iniciocontenedor .headerH1{
+    text-align: center;
+    color: white;
+}
+.Iniciocontenedor .logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Iniciocontenedor .logo img{
+    width: 300px;
+
+}
+.Iniciocontenedor .main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Iniciocontenedor .main .formulario {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.control {
+    width: 115%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: black;
+}
+
+label{
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.file{
+    width: 0;
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+
+.form-file_result{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background-color: #f2f0f0;
+    border-radius: 10px;
+    border: 1px dashed #609dd6;
+    z-index: 10;
+}
+
+.form-file_result::after {
+	content: 'Click  para elegir imagen';
+    font-size: 12px;
+    text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #609dd6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-file_result img {
+	width: 200px;
+	height: 150px;
+	z-index: 50;
+}
+
+.button{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background-color: #148F77;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+.tabla{
+    grid-area: tabla;
+}  
+.tabla h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.table{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.table, th{
+    height: 20px;
+    color: #148F77;
+    border: 1px solid black;
+
+}
+
+.Iniciocontenedor .footer{
+    margin-top: 20px;
+    background: #148F77;
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 840px) {
+
+    .Iniciocontenedor{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto  auto  auto 120px;
+    
+        grid-template-areas: "header"
+                            "logo"
+                            "main"
+                            "tabla"
+                            "footer";
+    
+    }
+    .Iniciocontenedor .main{
+        grid-area: main;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .Iniciocontenedor .main .formulario{
+        width: 300px;
+        display: block;
+    }
+}
+
+
+fieldset {
+    padding: 80px;
+    border: 1px solid black;
+    color: #148F77;
+  }
+
+.tabla fieldset{
+    padding: 80px;
+    border: 1px solid black;
+    color: #148F77;
+  }

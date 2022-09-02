@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <title>catalogo</title>
+</head>
+
+<body>
+    <div class="Iniciocontenedor">
+        <header class="headerH1">
+            <h1>Zapateria pies de Moda</h1>
+        </header>
+
+        <div class="logo">
+            <img src="logopr.jpeg" alt="">
+        </div>
+
+        <main class="main">
+            <form class="formulario" action="">
+                <fieldset>
+                    <h1>Agregar producto</h1>
+                    <form action="#">
+
+                        <label for="codigo">Codigo</label>
+                        <input class="control" type="number" name="codigo" id="id">
+
+                        <label for="nombre">Nombre</label>
+                        <input class="control" type="text" name="nombre" id="name">
+
+                        <label for="precio">Precio</label>
+                        <input class="control" type="number" name="precio" id="price">
+
+                        <label for="image">Imagen del producto</label>
+                        <input class="file" type="file" name="image" id="image">
+                        <div class="form-file_result" id="result-image">
+                            <img id="img-result" alt="">
+                        </div>
+
+                        <input class="button" type="button" name="boton" id="boton" value="Guardar" onclick="guardarRegistro()">
+                    </form>
+            </form>
+            </fieldset>
+        </main>
+
+        <div class="tabla">
+            <fieldset>
+                <h1> Catalogo de productos</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="detalle">
+
+                    </tbody>
+
+                </table>
+
+            </fieldset>
+            
+        </div>
+
+        <footer class="footer">
+            <P>
+                3 Avenida,3-47 Zona 10 <br>
+                Ciudad de Guatemala <br>
+                ©Zapateria pies de Moda <br>
+                Contáctenos: Zapateriapiesdemoda502@gmail.com
+            </P>
+        </footer>
+    </div>
+
+    <script src="js/catalogo.js"> </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.contenedor-tabla{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla-productos{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+
+#tabla-productos th{
+    padding: 10px;
+    color: white;
+}
+
+#tabla-productos td{
+    padding: 20px;
+}
+
+.imagen-producto{
+    width: 180px;
+}
+
+.btn-agregar-carrito{
+    height: 40px;
+    width: 200px;
+    background-color: #05AF1A;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#tabla-productos thead{
+    background-color: black;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+  .estiloParaLosElementos{
+    padding: 5%;
+  }
+ 
+  .NombreEmpresa{
+    font-size: 12px;
+    text-align: center;
+    background-color: #148F77;
+    padding: 1%;
+    color: white;
+    border: 2px solid black;
+  }
+  .EstiloPiedepagina{
+    font-size: 15px;
+    padding: 20px 0 40px 0;
+    color: white;
+    text-align: center;
+    font-family: 'sans-serif';
+    background: #148F77;
+    padding: 1%;
+    border: 2px solid black;
+
+  }
+  
+  header img{
+    width: 80px;
+  }
+
+  main fieldset {
+    border: 2px solid black;
+    padding: 5%;
+}
